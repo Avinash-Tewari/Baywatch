@@ -146,12 +146,12 @@ const BeachCard = ({ name, location, image, isSmall = false }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#000",
   },
   searchContainer: {
     flexDirection: "row",
     alignItems: "center",
-    padding: 10,
+    padding: 100,
     backgroundColor: "#f0f0f0",
     borderRadius: 20,
     margin: 10,
