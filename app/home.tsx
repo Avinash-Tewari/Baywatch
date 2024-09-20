@@ -146,7 +146,7 @@ const BeachCard = ({ name, location, image, isSmall = false }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#000",
+    backgroundColor: "#fff",
   },
   searchContainer: {
     flexDirection: "row",
