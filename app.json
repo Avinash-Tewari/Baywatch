@@ -4,11 +4,12 @@
     "slug": "jis",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/beach.png",
     "scheme": "myapp",
+    "entryPoint": "./index.tsx",
     "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/splash.png",
+    "beach": {
+      "image": "./assets/images/beach.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,7 +18,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/beach.png",
         "backgroundColor": "#ffffff"
       }
     },
