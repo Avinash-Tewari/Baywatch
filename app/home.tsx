@@ -107,7 +107,10 @@ const HomeScreen = () => {
         <Ionicons name="chatbubble-outline" size={24} color="#777" />
         <Ionicons name="map-outline" size={24} color="#777" />
         <Ionicons name="heart-outline" size={24} color="#777" />
-        <Ionicons name="person-outline" size={24} color="#777" />
+        {/* Profile button */}
+        <TouchableOpacity onPress={() => router.push("/settings")}>
+          <Ionicons name="person-outline" size={24} color="#777" />
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -151,10 +154,10 @@ const styles = StyleSheet.create({
   searchContainer: {
     flexDirection: "row",
     alignItems: "center",
-    padding: 100,
-    backgroundColor: "#f0f0f0",
-    borderRadius: 20,
-    margin: 10,
+    padding: 10,
+    backgroundColor: "#ffff",
+    borderRadius: 10,
+    margin: 20,
   },
   searchIcon: {
     marginRight: 10,
@@ -177,6 +180,9 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 200,
     resizeMode: "cover",
+    padding: 20,
+    margin: 10,
+    alignItems: "center",
   },
   sectionHeader: {
     flexDirection: "row",

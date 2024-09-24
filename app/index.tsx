@@ -3,6 +3,24 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import { useFonts } from "expo-font";
 import { router } from "expo-router";
 
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import home from "./home"; // Adjust path as needed
+import settings from "./settings"; // Adjust path as needed
+
+const Stack = createNativeStackNavigator();
+
+// export default function BayWatch() {
+//   return (
+//     // <NavigationContainer>
+//     //   <Stack.Navigator>
+//     //     <Stack.Screen name="Home" component={home} />
+//     //     <Stack.Screen name="Settings" component={settings} />
+//     //   </Stack.Navigator>
+//     // </NavigationContainer>
+//   );
+// }
+
 const BayWatch = () => {
   const [fontsLoaded] = useFonts({
     Smooch: require("@/assets/fonts/Smooch-Regular.ttf"),
